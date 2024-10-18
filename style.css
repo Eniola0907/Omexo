@@ -1,7 +1,3 @@
-body {
-    margin-left: 
-}
-
 .text-white {
   color: white;
 }
@@ -195,7 +191,7 @@ body {
     right: -300px;
 }
 
-.header {
+#header {
     margin-left: 100px;
     display: flex;
 }
@@ -252,10 +248,10 @@ nav > a{
     margin-left: 100px;
 }
 
-.section-2 {
+#section-2 {
     background-image: linear-gradient(180deg, rgba(155, 241, 216, 0.8) 12%, rgba(203, 220, 203, 0.8) 42%, #FFE4D1 88%);
     margin-left: -10px;
-    margin-right: -8px; 
+    margin-right: -8px;
 }
 
 .text > h5 {
@@ -281,6 +277,7 @@ nav > a{
     background-color: white;
     border: none;
     border-radius: 2px;
+    margin-bottom: 50px;
 }
 
 .search {
@@ -289,12 +286,13 @@ nav > a{
 
 .search button {
   width: 10%;
-  padding: 10px;
+  padding: 18px;
   background: #F75902;
   color: white;
   font-size: 17px;
   border: none;
   border-radius: 4px; 
+  height: 100%;
 }
 
 .img1 {
@@ -307,8 +305,10 @@ nav > a{
 
 .note {
     display: flex;
-    max-width: 700px;
+    max-width: 880px;
     margin: 35px;
+    position: relative;
+    right: -90px;
 }
 
 .note p {
@@ -318,13 +318,14 @@ nav > a{
 
 .note h4 {
   position: relative;
-  right: -10px;
-}
+  right: -10px; 
+} 
 
 .note1 {
-    margin-right: 50px;
+  margin: 20px;
+  padding-right: 30px;
     border: solid white;
-    box-shadow: 0px 4px 4px 3px whitesmoke;
+    box-shadow: 4px 4px whitesmoke;
     border-radius: 10px;
 }
 
@@ -338,19 +339,22 @@ nav > a{
   margin-left: 20px;
 }
 
-.note2 {
-    margin-right: 50px;
+.note2 { 
+  margin: 20px;
+  padding-right: 35px;
     border: solid white;
-    box-shadow: 0px 4px 4px 3px whitesmoke;
+    box-shadow: 4px 4px whitesmoke;
     border-radius: 10px;
 }
 
 .note3 {
-    margin-right: -500px;
+    margin: 20px;
+    padding-right: 25px;
+    padding-right: 25px;
     border: solid white;
-    box-shadow: 0px 4px 4px 3px whitesmoke;
+    box-shadow: 4px 4px whitesmoke;
     border-radius: 10px;
-}
+} 
 
 .about {
     display: flex;
@@ -390,7 +394,7 @@ nav > a{
 
 .records {
     display: flex;
-    margin-left: 300px;
+    margin-left: 200px;
     
 }
 
@@ -407,7 +411,7 @@ nav > a{
     color: #0D0A35;
 }
 
-.section-4 {
+#section-4 {
     background-color: #C3ECE0;
     margin-top: -5px;
     margin-left: -10px;
@@ -417,9 +421,8 @@ nav > a{
 
 .section4 {
     margin-left: 100px;
-    max-width: 1300px;
+    max-width: 1155px;
 }
-
 .cats {
     display: flex;
     justify-content: space-between;
@@ -459,7 +462,7 @@ nav > a{
     text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px){
     .img1 {
         display: none;
     }
@@ -468,13 +471,13 @@ nav > a{
         display: none;
     }
 
-    .section-2 {
+    #section-2 {
         margin-right: -410px;
     }
 
     .search button {
       width: 10%;
-      font-size: 55px;
+      font-size: 45px;
       height: 100%;
     }
 
@@ -491,7 +494,7 @@ nav > a{
         left: 50px;
     }
 
-    .header {
+    #header {
         font-size: 25px;
         max-width: 950px;
     }
@@ -501,27 +504,30 @@ nav > a{
       left: 150px;
     }
 
-    .section1 {
-        min-width: 800px;
+    .section1 nav {
+      font-size: 29px;
+      min-width: 635px;
     }
 
     .section1 .btngroup {
-      position: relative;
-      right: -100px;
-      font-size: 33px;
+      font-size: 28px;
       width: 50%;
-      padding-right: 100px;
+      padding-right: 80px;
+      position: relative;
+      right: -55px;
     }
+
+    .section1 {
+      min-width: 1000px;
+    }
+  
 
     .frame5 {
       display: none;
     }
 
-    .section1 nav {
-      min-width: 700px;
-      position: relative;
-      right: -50px;
-      font-size: 30px;
+    .section2 {
+      max-width: 1000px;
     }
 
 
@@ -532,57 +538,45 @@ nav > a{
     } 
 
     .note {
-        flex-direction: column;
-        max-width: 800px;
-        font-size: 30px;
-        position: relative;
-        right: -200px;
-    }
-
-    .note .note1, .note2, .note3 {
-      margin: 25px;
+      flex-direction: column;
+      font-size: 30px;
     }
 
     .note3 {
-      max-width: 745px;
+      min-width: 700px;
     }
 
-    .icon img {
+    .note1, .note2 {
+      min-width: 700px;
+    }
+
+    .note1, .note2, .note3 {
       position: relative;
-      bottom: -32px;
+      right: -250px;
+      margin-top: 50px;
     }
 
     .text-about {
-        font-size: 30px;
-        max-width: 950px;
-        text-align: center;
-        position: relative;
-        right: -150px;
-    }
-
-    .text-about > button {
-        font-size: 30px;
-    }
-
-    .records1 {
-      min-width: 350px;
+      text-align: center;
+      font-size: 35px;
+      max-width: 800px;
       position: relative;
-      right: 350px;
-      
+      right: -200px;
     }
 
-    .records h4 {
+    .text-about button {
+      font-size: 30px;
+    }
+
+    .records {
+      min-width: 1300px;
       position: relative;
-      right: 30px;
+      left: -106px;
+      font-size: 30px;
     }
 
-    .section4 {
-        font-size: 10px;
-        margin-left: 50px;
-    }
-
-    .section-4 {
-        margin-right: -405px;
+    #section-4 {
+        margin-right: -345px;
     }
 
     .cats p {
@@ -594,14 +588,76 @@ nav > a{
     }
 
     .section4 h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .courses1 {
         margin: 10px;
     }
 
-    .courses1 p {
-      font-size: 15px;
+    .courses {
+      display: flex;
+      flex-direction: column;
     }
+
+    .courses1 img {
+      align-items: center;
+      width: 100%;
+      margin-left: 55px;
+    }
+
+    .courses1 p {
+      font-size: 25px;
+    }
+}
+
+@media  screen and (max-width: 1280px) {
+  header{
+    margin-right: -118px;
+  }
+
+  #section-2 {
+    margin-right: -118px;
+  }
+
+  .note {
+    max-width: 600px;
+  }
+
+  #section-4 {
+    margin-right: -118px;
+  }
+
+  .section4 {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    margin-right: -483px;
+  }
+
+  #section-2 {
+    margin-right: -483px;
+  }
+
+  .note {
+    position: relative;
+    left: -50px; 
+  }
+
+  .records1 {
+    min-width: 150px;
+    position: relative;
+    left: -100px;
+  }
+
+  #section-4 {
+    margin-right: -483px;
+  }
+
+  .section1 {
+    max-width: 1024px;
+  }
 }
