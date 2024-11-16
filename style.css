@@ -581,7 +581,7 @@ nav > a{
     }
 
     #section-4 {
-        margin-right: -345px;
+        margin-right: 50%;
     }
 
     .cats p {
@@ -618,33 +618,34 @@ nav > a{
 
 @media  screen and (max-width: 1280px) {
   header{
-    margin-right: -118px;
+    margin-right: -5%;
   }
 
   #section-2 {
-    margin-right: -118px;
+    margin-right: -5%;
   }
 
   .note {
-    max-width: 600px;
+    max-width: 1000px;
   }
 
   #section-4 {
-    margin-right: -118px;
+    margin-right: -5%;
   }
 
   .section4 {
-    margin-right: 100px;
+    margin-right: 50px;
+    max-width: 1080px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   header {
-    margin-right: -530px;
+    margin-right: -100%;
   }
 
   #section-2 {
-    margin-right: -530px;
+    margin-right: -100%;
   }
 
   .note {
@@ -659,10 +660,29 @@ nav > a{
   }
 
   #section-4 {
-    margin-right: -530px;
+    margin-right: -100%;
   }
 
   .section1 {
     max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1966px) {
+  .section4 {
+    margin-left: 50px;
+    max-width: 1200px;
+  }
+
+  .section1 {
+    max-width: 700px;
+  }
+
+  #header {
+    max-width: 700px;
+  }
+
+  .note {
+    max-width: 550px;
   }
 }
